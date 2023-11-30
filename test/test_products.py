@@ -1,7 +1,5 @@
 import unittest
 import requests
-import time
-
 
 class TestInventoryAPI(unittest.TestCase):
     base_url = "http://localhost:5000/api/products"
