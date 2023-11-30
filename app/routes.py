@@ -28,18 +28,6 @@ def get_product(product_id):
     if product:
         return jsonify({"id": product.id, "name": product.name, 'description': product.description, "price": product.price}), 200
     return jsonify({"message": "Product not found"}), 404
-
-# Get a product
-@app.route('/api/products/<int:product_id>', methods=['GET'])
-def get_single_products(product_id):
-    product = Product.query.get(product_id)
-    if product:
-        data = request.get_json()
-        product.name = data.get('name', product.name)
-        product.price = data.get('price', product.price)
-        db.session.commit()
-        return jsonify({'id': product.id, 'name': product.name, 'price': product.price}), 200
-    return jsonify({"message": "Product not found"}), 404
   
 # Update a product
 @app.route('/api/products/<int:product_id>', methods=['PUT'])
