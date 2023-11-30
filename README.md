@@ -43,3 +43,7 @@ This Flask-based API powers the Inventory Management System for BongoDev. It han
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Screenshot
+
+![Screenshot 1](https://raw.githubusercontent.com/newazbenalam/Flask-API-Inventory-Management-System/656985c65fbb492aae6f3bd5bba03926a2762f4a/docs/Screenshot-1.png)
