@@ -5,6 +5,7 @@ This API serves as the backend for BongoDev's Inventory Management System, provi
 ## Author
 
 - **Author:** Newaz Ben Alam
+- **Email:** newazbenalam@gmail.com
 
 ## Description
 
