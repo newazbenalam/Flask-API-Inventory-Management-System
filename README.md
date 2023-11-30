@@ -40,6 +40,16 @@ This Flask-based API powers the Inventory Management System for BongoDev. It han
 - `PUT /api/products/<product_id>`: Update details of a specific product.
 - `DELETE /api/products/<product_id>`: Delete a product from the inventory.
 
+## Sample Product JSON
+
+```json
+{
+	"name": "Potato",
+	"description": "Nice fresh potato",
+	"price": 40.99
+}
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
