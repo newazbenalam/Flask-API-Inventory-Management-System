@@ -2,7 +2,7 @@ from app import app, db
 from app.model import Product
 from flask import jsonify, request
 
-
+# Add a product
 @app.route('/api/products', methods=['POST'])
 def add_product():
   data = request.get_json()
@@ -15,7 +15,8 @@ def add_product():
   db.session.commit()
 
   return jsonify({"message": "Product added successfully"}), 200
-  
+
+# Get all products
 @app.route('/api/products', methods=['GET'])
 def get_products():
     products = Product.query.all()
