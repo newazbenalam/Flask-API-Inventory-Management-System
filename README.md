@@ -50,6 +50,51 @@ This Flask-based API powers the Inventory Management System for BongoDev. It han
 }
 ```
 
+## Architecture
+
+```
+project/
+|-- app/
+|   |-- models/
+|   |   |-- __init__.py
+|   |   |-- product.py
+|   |
+|   |-- views/
+|   |   |-- __init__.py
+|   |   |-- product_views.py
+|   |
+|   |-- controllers/
+|   |   |-- __init__.py
+|   |   |-- product_controller.py
+|   |
+|   |-- services/
+|   |   |-- __init__.py
+|   |   |-- product_service.py
+|   |
+|   |-- templates/
+|   |   |-- index.html
+|   |   |-- user/
+|   |   |   |-- profile.html
+|   |   |-- product/
+|   |   |   |-- list.html
+|   |
+|   |-- static/
+|       |-- style.css
+|
+|-- config.py
+|-- run.py
+
+```
+
+- app/models: Contains your database models (e.g., User, Product).
+- app/views: Defines your routes, and views, and handles HTTP requests.
+- app/controllers: Contains functions to manage complex business logic.
+- app/templates: Stores HTML templates for rendering views.
+- app/static: Stores static files like CSS, JavaScript, images, etc.
+- app/services: Components responsible for specific business logic.
+- config.py: Configuration settings for your Flask app.
+- run.py: Entry point to start your Flask app.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
