@@ -50,8 +50,7 @@ This Flask-based API powers the Inventory Management System for BongoDev. It han
 }
 ```
 
-## Architecture
-
+## Application Structure
 ```
 project/
 |-- app/
